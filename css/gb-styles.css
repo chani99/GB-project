@@ -1,6 +1,26 @@
+body {
+  background-color: black;
+}
+* {
+  border: 1px solid greenyellow;
+}
 #gb-logo {
   float: left;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+li {
+  display: inline;
+  margin-top: 15px;
+}
+li a {
+  color: white;
+}
+.line {
+  color: #ec1f27;
+}
+nav {
+  margin-top: 40px;
+  margin-right: 15px;
 }
