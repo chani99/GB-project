@@ -4,7 +4,7 @@
 body {
     background-color: @gb-black;
 }
-* { border: 1px solid greenyellow; }
+// * { border: 1px solid greenyellow; }
 
 #gb-logo { 
     float: left;
@@ -32,7 +32,8 @@ li{
 
 
 .line {
-    color: @gb-red;}
+    color: @gb-red;
+}
 
 #navBar {
     margin-top: 40px;
@@ -41,20 +42,46 @@ li{
 
 }
 
-    .logos {
-        max-height: 60px;
-        img {
-        margin: auto;
 
-        }
-        
-        
+.col-md-2{
+    padding-top: 40px;
+    min-height: 150px;
+    background-color: @gb-black;
     }
     
-    .col-md-2{
-        min-height: 50px;
+.col-md-2:hover{
+    min-height: 150px;
+    background-color: @gb-red;
+    height: 100px;
+
+    img{
+    display: none;
+
+    .over-logo{
+        display: show;
+    }
+}
+
+
     }
 
 #logos {
-    margin-top: 20px;
+    height: 100px;
+
+}
+
+    .Plogos {
+        margin: 0 auto;
+        max-height: 60px;         
+}
+  
+.over-logo {
+    min-height: 150px;
+    background-color: @gb-red;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    display: none;
+
+
 }
