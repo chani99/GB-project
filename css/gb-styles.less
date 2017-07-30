@@ -1,6 +1,11 @@
 @gb-red: #ec1f27;
 @gb-black: black;
 
+@font-face {
+    font-family: 'Spoiler-Regular';
+src: url('../fonts/Spoiler-Regular.woff') format('woff'), url('../fonts/Spoiler-Regular.ttf') format('truetype');}
+
+
 body {
     background-color: @gb-black;
 }
@@ -16,7 +21,9 @@ body {
 li{
     display: inline;
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 20px;
+                        font-family: 'Spoiler-Regular';
+
             a {
                 color: white;
                 text-decoration: none;
@@ -49,21 +56,27 @@ li{
     background-color: @gb-black;
     }
     
-.col-md-2:hover{
-    min-height: 150px;
-    background-color: @gb-red;
-    height: 100px;
+        .col-md-2:hover{
+            min-height: 150px;
+            background-color: @gb-red;
+            height: 100px;
 
-    img{
-    display: none;
+            img{
+            display: none;}
 
-    .over-logo{
-        display: show;
-    }
-}
+            p{
+                display: inline;
+                    text-align: center;
+                    font-family: 'Spoiler-Regular';
+                    margin: 0 auto;
+
+                
+            }
+
+        }
 
 
-    }
+    
 
 #logos {
     height: 100px;
@@ -76,12 +89,17 @@ li{
 }
   
 .over-logo {
+                        margin: 0 auto;
+
     min-height: 150px;
-    background-color: @gb-red;
-    text-align: center;
+     text-align: center;
     font-size: 20px;
     color: white;
     display: none;
+    font-family: 'Spoiler-Regular';
+
 
 
 }
+
+
