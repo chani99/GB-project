@@ -1,15 +1,21 @@
 @gb-red: #ec1f27;
 @gb-black: black;
+@gb-gray:#dcd7d3;
+@gb-darkGray: #404040;
 
 @font-face {
     font-family: 'Spoiler-Regular';
 src: url('../fonts/Spoiler-Regular.woff') format('woff'), url('../fonts/Spoiler-Regular.ttf') format('truetype');}
 
 
-body {
+body {  
     background-color: @gb-black;
+    margin:0; padding:0; box-sizing:border-box; 
 }
-// * { border: 1px solid greenyellow; }
+* {   margin:0; padding:0; box-sizing:border-box; 
+
+    //  border: 1px solid greenyellow; }
+}
 
 #gb-logo { 
     float: left;
@@ -22,7 +28,7 @@ li{
     display: inline;
     margin-top: 15px;
     font-size: 20px;
-                        font-family: 'Spoiler-Regular';
+    font-family: 'Spoiler-Regular';
 
             a {
                 color: white;
@@ -50,25 +56,28 @@ li{
 }
 
 
-.col-md-2{
+.hover-red{
     padding-top: 40px;
+    padding-bottom: 40px;
     min-height: 150px;
     background-color: @gb-black;
+
     }
     
-        .col-md-2:hover{
+        .hover-red:hover{
             min-height: 150px;
             background-color: @gb-red;
             height: 100px;
+
 
             img{
             display: none;}
 
             p{
                 display: inline;
-                    text-align: center;
-                    font-family: 'Spoiler-Regular';
-                    margin: 0 auto;
+                text-align: center;
+                font-family: 'Spoiler-Regular';
+                 margin: 0 auto;
 
                 
             }
@@ -76,10 +85,12 @@ li{
         }
 
 
-    
-
 #logos {
-    height: 100px;
+    height: 200px;
+    text-align: center;
+    line-height: 170%;
+
+
 
 }
 
@@ -89,17 +100,72 @@ li{
 }
   
 .over-logo {
-                        margin: 0 auto;
-
+    position: relative;
+    top: 10px;
     min-height: 150px;
-     text-align: center;
-    font-size: 20px;
     color: white;
     display: none;
     font-family: 'Spoiler-Regular';
+    font-size: 25px;
+}
+
+#al_haderech{
+        position: relative;
+    top: -1px;
+
+}
+
+.gray {
+    background-color: @gb-gray;
+}
+
+.dark-gray {
+    background-color: @gb-darkGray;
+}
 
 
+.h-250{
+    height: 250px;
+}
 
+.h-100{
+    height: 100px;
+}
+
+
+.shlager-black{
+    padding-top: 10px;
+    font-family: 'Spoiler-Regular';
+    color: black;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.shlager-white{
+    font-family:'Spoiler-Regular';
+    color: white;
+    font-size: 14px;
+    text-align: right;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+a:hover {
+    color: @gb-red;
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-top: 15px;
+}
+
+#footer-logo {
+    position: relative;
+    top: -10px;
 }
 
 
