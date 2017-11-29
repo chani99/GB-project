@@ -1,0 +1,34 @@
+body {
+  padding-top: 54px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+.mainscreen {
+  padding: 20px;
+}
+.brand {
+  width: 200px;
+}
+.block {
+  display: inline-block;
+  float: left;
+}
+header.masthead {
+  background: url('../../back/images/banner-01.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+header.masthead > .overlay {
+  padding: 5rem 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  header.masthead > .overlay {
+    padding: 4rem 0;
+  }
+}
