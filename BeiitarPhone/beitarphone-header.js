@@ -1,20 +1,27 @@
-function headerPhone(tableHeader) {
-    // var screen = document.getElementById('result').innerHTML = "";
+function headerPhone(newList) {
+    var screen = document.getElementById('result').innerHTML = "";
 
-    for (let i = 0; i < tableHeader.length; i+92) {
-        // var newdiv = document.createElement("div");
-        let firstName = tableHeader[i].A;
-        // let firstName2 = firstName.substr(firstName.indexOf(" ")+1);
-        let lastName = tableHeader[i+91].A;        
-        // let lastName2 = lastName.substr(firstName.indexOf(" ")+1);
-        
-        // let line = document.createTextNode(firstName + " - " + lastName);
-        // newdiv.appendChild(line);
-        // $('#result').append(newdiv);
-        
+    for (let i = 0; i < newList.length; i += 92) {
+        var newdiv = document.createElement("div");
+        let firstName = newList[i][0].A;
+        let firstName2 = cutName(firstName);
+        let lastName = newList[i + 92][0].A;
+        let lastName2 = cutName(lastName);
+
+        let line = document.createTextNode(firstName2 + " - " + lastName2);
+        console.log(line);
+
+        newdiv.appendChild(line);
+        $('#result').append(newdiv);
+
     }
 }
 
+function cutName(words) {
+    var n = words.split(" ");
+    return n[0];
 
-var newtable = headerPhone(tableHeader);
-//  creaTable(newtable);
+}
+
+
+var newtable2 = headerPhone(newList);
