@@ -5,7 +5,7 @@ function headerPhone(newList) {
         var newdiv = document.createElement("div");
         let firstName = newList[i][0].A;
         let firstName2 = cutName(firstName);
-        let lastName = newList[i + 92][0].A;
+        let lastName = newList[i + 90][0].A;
         let lastName2 = cutName(lastName);
 
         let line = document.createTextNode(firstName2 + " - " + lastName2);
@@ -18,8 +18,16 @@ function headerPhone(newList) {
 }
 
 function cutName(words) {
-    var n = words.split(" ");
-    return n[0];
+    let newWord = words.split(" ");
+    let str =  newWord[0];
+    if (str.length <=2) {
+        return newWord[0] + " " + newWord[1];
+    } else if(!newWord){
+        return words;
+    }
+    else{
+        return newWord[0];
+    }
 
 }
 
