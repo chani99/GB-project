@@ -1,0 +1,18 @@
+npm init
+
+npm install angular@latest --save
+
+npm install http-server --save-dev
+
+edit 'scripts' section in package.json:
+ "start": "http-server ./ -p 8000",
+
+
+npm start
+
+
+
+
+
+-----------------------------------------------------
+(git init)

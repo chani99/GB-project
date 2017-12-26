@@ -1,0 +1,21 @@
+
+    <div ng-controller="mybooks">
+
+        <div class="mybook" ng-repeat='(key, value) in book | filter:search | bestseller:1234'>
+            <img ng-src={{value.image}} width="{{value.img.width}}">
+            <figcaption>
+            {{value.book}} <span ng-if="value.isBestSeller"> best seller</span>
+            <br>
+            {{value.name}}
+            <br>
+            <button class="btn btn-primary" ng-click="addItem(value.isbn)">Add Book to shopping cart</button>
+        </figcaption>
+        <ad name="{{value.name}}"></ad>
+         </div>
+         <br>
+         <input ng-model="search">
+         
+         
+         
+
+    </div>

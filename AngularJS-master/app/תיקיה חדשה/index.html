@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="chani">
+
+<head>
+        
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>    
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></script>
+    <link href="../node_modules/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet"></script>
+    <script src="chani.js"></script>
+    
+     
+    <style>
+                .mybook{
+                float: left;
+                margin: 20px;
+                padding: 20px;
+                background-color:white;
+
+                }
+            
+                body {
+                    background-color: rgb(206, 198, 198);
+                }
+                img{
+                    margin-bottom: 15px;
+
+                }
+    </style>
+            
+            
+
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">BOOK SHOP</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home page</a></li>
+                        <li> 
+                            <a href="#!order">Order</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                    
+                  
+  
+    </header>
+
+    <div ng-view></div>
+
+
+        
+
+    <footer>
+        <div ad></div>
+    </footer>
+
+
+
+</body>
+
+</html>
