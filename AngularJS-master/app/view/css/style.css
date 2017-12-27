@@ -1,12 +1,64 @@
-.navbar-nav{
-    float: right;
-    margin-top: 32px;
+.row {
+  margin: 0;
+  padding: 0;
 }
-
-#gb-logo {
-    float: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+}
+.flex-item {
+  width: 25%;
+}
+@media screen and (min-width: 500px) {
+  .item {
+    width: 50%;
   }
-  
+}
+@media screen and (min-width: 350px) {
+  .item {
+    width: 100%;
+  }
+}
+.fullscreen {
+  width: 100%;
+}
+.col-md-12 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1400px;
+  background-color: black;
+  margin: 0, auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-nav {
+  float: right;
+  margin-top: 32px;
+}
+.navbar {
+  margin-bottom: 0;
+}
+#gb-logo {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+footer {
+  margin-top: 100px;
+  padding-top: 15px;
+}
+#footer-logo {
+  position: relative;
+  top: -10px;
+}
+.ng-scope {
+  margin: 0;
+  padding: 0;
+}
