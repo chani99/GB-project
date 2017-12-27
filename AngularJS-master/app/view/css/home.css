@@ -3,7 +3,7 @@
   src: url('../fonts/Spoiler-Regular.woff') format('woff'), url('../fonts/Spoiler-Regular.ttf') format('truetype');
 }
 li {
-  display: inline;
+  display: flex;
   font-size: 20px;
   font-family: 'Spoiler-Regular';
 }
@@ -43,7 +43,6 @@ li a:hover {
   margin: 0 auto;
 }
 #logos {
-  height: 200px;
   text-align: center;
   line-height: 170%;
 }
