@@ -19,6 +19,9 @@
       .when('/view2', {
            templateUrl: 'view/view2.html'
       })
+      .when('/book', {
+        templateUrl: 'view/flipbook.html'
+      })
       .otherwise({redirectTo : 'home'});
   });
 
